@@ -20,13 +20,13 @@
     if (typeof define === 'function' && define.amd) {
         define(['./mimeTypeList', './extensionList'], factory);
     } else {
-        root.mimeTypes = factory(root.mimeTypeList, root.extensionList);
+        root.mimetypes = factory(root.mimeTypeList, root.extensionList);
     }
 }(this, function(mimeTypeList, extensionList) {
 
     "use strict";
 
-    var mimeTypes = {
+    var mimetypes = {
 
         /**
          * Returns file extension for a content type string. If no suitable extensions
@@ -91,5 +91,5 @@
         }
     };
 
-    return mimeTypes;
+    return mimetypes;
 }));
