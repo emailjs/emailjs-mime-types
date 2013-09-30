@@ -8,7 +8,7 @@
 
 Install with [volo](http://volojs.org/):
 
-    volo add Kreata/mimetypes
+    volo add Kreata/mimetypes/v0.1.0
 
 ### AMD
 
