@@ -67,6 +67,14 @@ results in
 
 ## Tests
 
+Download `mimetypes` source and install dependencies
+
+```bash
+git clone git@github.com:Kreata/mimetypes.git
+cd mimetypes
+volo install
+```
+
 Tests are handled by QUnit. Open [testrunner.html](tests/testrunner.html) to run the tests.
 
 ## License
