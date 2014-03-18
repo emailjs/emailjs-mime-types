@@ -8,15 +8,15 @@
 
 ### [volo](http://volojs.org/):
 
-    volo add whiteout-io/mimetypes/v0.1.1
+    volo add whiteout-io/mimetypes/0.1.1
 
 ### [Bower](http://bower.io/):
 
-    bower install --save mimetypes
+    bower install git@github.com:whiteout-io/mimetypes.git#0.1.1
 
 ### [npm](https://www.npmjs.org/):
 
-    npm install --save mimetypes
+    npm install https://github.com/whiteout-io/mimetypes/tarball/0.1.1
 
 ## Usage
 
