@@ -1,38 +1,37 @@
 # MIME Types
 
-`mimetypes` allows you to detect file extensions for content types and vice-versa.
+`mimetypes` is a UMD module that allows you to detect file extensions for content types and vice-versa.
+
+[![Build Status](https://travis-ci.org/whiteout-io/mimetypes.png?branch=master)](https://travis-ci.org/whiteout-io/mimetypes)
+
+## Installation
+
+### [volo](http://volojs.org/):
+
+    volo add whiteout-io/mimetypes/v0.1.1
+
+### [Bower](http://bower.io/):
+
+    bower install --save mimetypes
+
+### [npm](https://www.npmjs.org/):
+
+    npm install --save mimetypes
 
 ## Usage
 
-### Volo
+### node.js and AMD
 
-Install with [volo](http://volojs.org/):
-
-    volo add Kreata/mimetypes/v0.1.0
-
-### AMD
-
-Require [mimetypes.js](mimetypes.js) as `mimetypes`
+    require('mimetypes');
 
 ### Global context
 
-Include files the folowing files
-
-  * [mimeTypeList.js](mimeTypeList.js)
-  * [extensionList.js](extensionList.js)
-  * [mimetypes.js](mimetypes.js)
-
-```html
-<script src="mimeTypeList.js"></script>
-<script src="extensionList.js"></script>
-<script src="mimetypes.js"></script>
-```
-
-This exposes global variable `mimetypes`
+    // exposes global variable mimetypes
+    <script src="mimetypes.js"></script>
 
 ## Methods
 
-### detectExtension
+### #detectExtension
 
  Returns file extension for a content type string. If no suitable extensions are found, 'bin' is used as the default extension.
 
@@ -42,14 +41,9 @@ This exposes global variable `mimetypes`
 
 For example:
 
-    mimetypes.detectExtension("image/jpeg")
+    mimetypes.detectExtension('image/jpeg') // returns 'jpeg'
 
-results in
-
-    "jpeg"
-
-
-### detectMimeType
+### #detectMimeType
 
 Returns content type for a file extension. If no suitable content types are found, 'application/octet-stream' is used as the default content type
 
@@ -59,23 +53,7 @@ Returns content type for a file extension. If no suitable content types are foun
 
 For example:
 
-    mimetypes.detectExtension("jpeg")
-
-results in
-
-    "image/jpeg"
-
-## Tests
-
-Download `mimetypes` source and install dependencies
-
-```bash
-git clone git@github.com:Kreata/mimetypes.git
-cd mimetypes
-volo install
-```
-
-Tests are handled by QUnit. Open [testrunner.html](tests/testrunner.html) to run the tests.
+    mimetypes.detectExtension('jpeg') // returns 'image/jpeg'
 
 ## License
 
