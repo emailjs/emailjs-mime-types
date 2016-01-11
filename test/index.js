@@ -10,6 +10,6 @@ require.config({
 
 
 mocha.setup('bdd');
-require(['test/mimetypes-unit'], function() {
+require(['test/emailjs-mime-types-unit'], function() {
     (window.mochaPhantomJS || window.mocha).run();
 });

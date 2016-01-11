@@ -1,28 +1,16 @@
 # MIME Types
 
-`mimetypes` is a UMD module that allows you to detect file extensions for content types and vice-versa.
+`emailjs-mime-types` is a UMD module that allows you to detect file extensions for content types and vice-versa.
 
 [![Build Status](https://travis-ci.org/whiteout-io/mimetypes.png?branch=master)](https://travis-ci.org/whiteout-io/mimetypes)
 
-## Installation
-
-### [volo](http://volojs.org/):
-
-    volo add whiteout-io/mimetypes/v0.1.1
-
-### [Bower](http://bower.io/):
-
-    bower install git@github.com:whiteout-io/mimetypes.git#v0.1.1
-
-### [npm](https://www.npmjs.org/):
-
-    npm install https://github.com/whiteout-io/mimetypes/tarball/v0.1.1
-
 ## Usage
+
+    [npm | bower] install emailjs-mime-types
 
 ### node.js and AMD
 
-    require('mimetypes');
+    require('emailjs-mime-types');
 
 ### Global context
 

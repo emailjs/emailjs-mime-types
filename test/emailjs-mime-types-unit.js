@@ -2,9 +2,9 @@
     'use strict';
 
     if (typeof define === 'function' && define.amd) {
-        define(['chai', 'mimetypes'], factory);
+        define(['chai', 'emailjs-mime-types'], factory);
     } else if (typeof exports === 'object') {
-        factory(require('chai'), require('../src/mimetypes'));
+        factory(require('chai'), require('../src/emailjs-mime-types'));
     }
 }(this, function(chai, mimetypes) {
     'use strict';

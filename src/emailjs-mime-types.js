@@ -25,7 +25,7 @@
     } else if (typeof exports === 'object') {
         module.exports = factory();
     } else {
-        root.mimetypes = factory();
+        root['emailjs-mime-types'] = factory();
     }
 }(this, function() {
     'use strict';
