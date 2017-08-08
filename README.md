@@ -1,5 +1,7 @@
 # MIME Types
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/emailjs/emailjs-mime-types.svg)](https://greenkeeper.io/)
+
 `emailjs-mime-types` is a UMD module that allows you to detect file extensions for content types and vice-versa.
 
 [![Build Status](https://travis-ci.org/whiteout-io/mimetypes.png?branch=master)](https://travis-ci.org/whiteout-io/mimetypes)
