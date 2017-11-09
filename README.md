@@ -1,21 +1,18 @@
 # MIME Types
 
-`emailjs-mime-types` is a UMD module that allows you to detect file extensions for content types and vice-versa.
+`emailjs-mime-types` allows you to detect file extensions for content types and vice-versa.
 
-[![Build Status](https://travis-ci.org/whiteout-io/mimetypes.png?branch=master)](https://travis-ci.org/whiteout-io/mimetypes)
+[![Greenkeeper badge](https://badges.greenkeeper.io/emailjs/emailjs-mime-types.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/emailjs/emailjs-mime-types.png?branch=master)](https://travis-ci.org/emailjs/emailjs-mime-types) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)  [![ES6+](https://camo.githubusercontent.com/567e52200713e0f0c05a5238d91e1d096292b338/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f65732d362b2d627269676874677265656e2e737667)](https://kangax.github.io/compat-table/es6/)
 
 ## Usage
 
-    [npm | bower] install emailjs-mime-types
+```bash
+npm install --save emailjs-mime-types
+```
 
-### node.js and AMD
-
-    require('emailjs-mime-types');
-
-### Global context
-
-    // exposes global variable mimetypes
-    <script src="mimetypes.js"></script>
+```javascript
+import { detectExtension, detectMimeType } from 'emailjs-mime-types'
+```
 
 ## Methods
 
@@ -23,7 +20,7 @@
 
  Returns file extension for a content type string. If no suitable extensions are found, 'bin' is used as the default extension.
 
-    mimetypes.detectExtension(mimeType) -> String
+    mimetypes.detectExtension(mimeType -> String) -> String
 
   * **mimeType** - Content type to be checked for
 
@@ -35,7 +32,7 @@ For example:
 
 Returns content type for a file extension. If no suitable content types are found, 'application/octet-stream' is used as the default content type
 
-    mimetypes.detectMimeType(extension) -> String
+    mimetypes.detectMimeType(extension -> String) -> String
 
   * **extension** Extension to be checked for
 
