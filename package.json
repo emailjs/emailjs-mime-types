@@ -7,9 +7,9 @@
   "scripts": {
     "build": "./scripts/build.sh",
     "release": "./scripts/release.sh",
-    "lint": "$(npm bin)/standard",
+    "lint": "npx standard",
     "test": "npm run lint && npm run unit",
-    "unit": "$(npm bin)/mocha './src/*-unit.js' --reporter spec --require babel-register testutils.js"
+    "unit": "npx mocha './src/*-unit.js' --reporter spec --require babel-register testutils.js"
   },
   "repository": {
     "type": "git",
