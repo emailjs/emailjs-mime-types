@@ -2,7 +2,7 @@
   "name": "emailjs-mime-types",
   "version": "2.0.0",
   "description": "`emailjs-mime-types` allows you to detect file extensions for content types and vice-versa.",
-  "main": "src/mimetypes.js",
+  "main": "dist/mimetypes.js",
   "homepage": "https://github.com/emailjs/emailjs-mime-types",
   "scripts": {
     "lint": "$(npm bin)/standard",
@@ -21,7 +21,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
