@@ -15,6 +15,13 @@ describe('mimetypes', function () {
 
       expect(detectExtension(contentType)).to.equal(extension)
     })
+
+    it('should use favored extension if match', function () {
+      const contentType = 'text/plain'
+      const favoredExtension = 'log'
+
+      expect(detectExtension(contentType, favoredExtension)).to.equal(favoredExtension)
+    })
   })
 
   describe('#detectExtension', function () {
