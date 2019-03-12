@@ -20,19 +20,22 @@ import { detectExtension, detectMimeType } from 'emailjs-mime-types'
 
  Returns file extension for a content type string. If no suitable extensions are found, 'bin' is used as the default extension.
 
-    mimetypes.detectExtension(mimeType -> String) -> String
+    mimetypes.detectExtension(mimeType: String, [favoredExtension: String]) -> String
 
   * **mimeType** - Content type to be checked for
+  * **favoredExtension** (optional) - If multiple extensions exist for type, then pick favoredExtension if available
 
 For example:
 
     mimetypes.detectExtension('image/jpeg') // returns 'jpeg'
+    mimetypes.detectExtension('image/jpeg', 'jpg') // returns 'jpg'
+    mimetypes.detectExtension('image/jpeg', 'txt') // returns 'jpeg'
 
 ### #detectMimeType
 
 Returns content type for a file extension. If no suitable content types are found, 'application/octet-stream' is used as the default content type
 
-    mimetypes.detectMimeType(extension -> String) -> String
+    mimetypes.detectMimeType(extension: String) -> String
 
   * **extension** Extension to be checked for
 

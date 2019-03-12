@@ -8,7 +8,7 @@ import { types } from './list-types'
  * @param {String} mimeType Content type to be checked for
  * @return {String} File extension
  */
-export function detectExtension (mimeType = '') {
+export function detectExtension (mimeType = '', favoredExtension = '') {
   mimeType = mimeType.toString().toLowerCase().replace(/\s/g, '')
   if (!(mimeType in types)) {
     return 'bin'
@@ -16,6 +16,11 @@ export function detectExtension (mimeType = '') {
 
   if (typeof types[mimeType] === 'string') {
     return types[mimeType]
+  }
+
+  favoredExtension = favoredExtension.toString().toLowerCase().replace(/\s/g, '')
+  if (favoredExtension && types[mimeType].includes(favoredExtension)) {
+    return favoredExtension
   }
 
   // search for name match
